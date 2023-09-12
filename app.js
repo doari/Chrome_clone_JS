@@ -1,37 +1,22 @@
-// 설명이 필요하지 않은 데이터 리스트들은 array로,
-// 설명이 필요한 정보가 담긴 데이터 리스트들은 object로!
+//player.points(); 라고 사용하지 않았다. player.points은 function이 아니기 때문. player.points은 숫자다.
+//player에게 function을 주기 전에, 어떻게 function을 만드는지를 배워야 한다.
+//function은 내가 계속 반복해서 사용할 수 있는 코드 조각이다. 어떤 코드를 캡슐화 해서 실행을 여러번 할 수 있게 해준다.
 
-//object는 property를 가진 데이터를 저장해주며, { } 를 사용한다.
+//function 선언 :
+//function 함수명() {
+//실행코드
+//}
 
-const player = {
-name : "tomato",
-color : "red",
-food : true,
-};
+//funtion 실행 : 함수명();
+//argument(인수)를 보내야 하는데 인수란 함수를 실행하는 동안 어떤 정보를 함수에게 보낼 수 있는 방법이다.
 
-console.log(player);
+function sayHello(){
+    console.log("Hello my name is C")
 
-//property를 불러오는 방법은 2가지가 있다.
+}
 
-//1. console.log(player.name); => tomato
-//2. console.log(player["name"]); => tomato
-
-//또한 property를 바꾸는 것은 가능하지만 선언된 object를 바꾸는 것은 불가능하다.
-//ex)
-const player2 = {
-name : "tomato",
-color : "red",
-food : true,
-};
-
-console.log(player2);
-player2.color = "blue";
-console.log(player2.color);
-//--> blue
-
-//그리고 property를 추가 할 수도 있다.
-
-player2.koreanName = "토마토";
-
-//--> {name: "tomato", color: "blue", food: true, koreaName: "토마토"}
-
+//alert();
+//console.log("hello");
+sayHello("Min");
+sayHello("Lee");
+sayHello("Kim");
