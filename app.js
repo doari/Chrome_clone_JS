@@ -10,13 +10,40 @@
 //funtion 실행 : 함수명();
 //argument(인수)를 보내야 하는데 인수란 함수를 실행하는 동안 어떤 정보를 함수에게 보낼 수 있는 방법이다.
 
-function sayHello(){
-    console.log("Hello my name is C")
-
+function sayHello(nameOfPerson,age){
+    console.log("Hello my name is "+nameOfPerson+"and I'm "+ age);
 }
 
 //alert();
 //console.log("hello");
-sayHello("Min");
-sayHello("Lee");
-sayHello("Kim");
+sayHello("Min",25);
+sayHello("Lee",27);
+sayHello("Kim",23);
+
+function plus(a,b){
+    console.log(a+ b);
+}
+function divide(a,b){
+    console.log(a/b);
+}
+plus(8,50);
+//58
+divide(98,20)
+//4.9
+
+
+const player= {
+    name: "JUN",
+    sayHello: function(otherPersonsName){
+        console.log("hello!"+ otherPersonsName+ " nice to meet you!");
+    },
+};
+console.log(player.name);
+player.sayHello("Lee");
+player.sayHello("JUN");
+
+//계산기 만들기
+function plus(a,b){
+    console.log(a+b);
+}
+plus(5,4);
