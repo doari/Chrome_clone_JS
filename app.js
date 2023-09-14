@@ -1,27 +1,43 @@
-const calcultor ={
-    add: function(a,b){
-        console.log(a+b);
-
+//console.log는 그림의 떡. 꺼내 먹으려면 return필요
+//function안에서 return과 추가작업을 입력하면
+//return만 작업하고 추가 수행은 이뤄지지 않는다.
+//만약 return 앞에 기타작업이 있다면 이 작업은 수행된다.
+//즉, return"까지만" 수행된다!
+const calculator = {
+    add: function (a, b) {
+    //console.log(a + b);
+    return a + b;
+    //return에서 반환되므로 return 밑으로 쓰는 코드는 실행 안됨
     },
-    minus: function(a,b){
-        console.log(a-b);
-
+    
+    subtract: function (a, b) {
+    //console.log(a - b);
+    return a - b;
     },
-    div: function(a,b){
-        console.log(a/b);
-
+    
+    multiply: function (a, b) {
+    //console.log(a * b);
+    return a * b;
     },
-    multi: function(a,b){
-        console.log(a*b);
-
+    
+    divide: function (a, b) {
+    //console.log(a / b);
+    return a / b;
     },
-    power: function(a,b){
-        console.log(a**b);
-
+    
+    square: function (a, b) {
+    //console.log(a ** b);
+    return a ** b;
     },
-};
-calcultor.add(5, 1);
-calcultor.minus(3, 2);
-calcultor.div(4, 7);
-calcultor.multi(5, 2);
-calcultor.power(2, 8);
+    };
+    
+    let result = calculator.add(10, 2); //12
+    console.log(result);
+    result = calculator.subtract(10, 2); //8
+    console.log(result);
+    result = calculator.multiply(10, 2); //20
+    console.log(result);
+    result = calculator.divide(10, 2); //5
+    console.log(result);
+    result = calculator.square(10, 2); //100
+    console.log(result);
