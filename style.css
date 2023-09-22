@@ -4,7 +4,7 @@ body{
 
 h1 {
     color: cornflowerblue;
-    transition: color 0.5s ease-in-out;
+    transition: color .5s ease-in-out;
 }
 .clicked {
     color: tomato;
